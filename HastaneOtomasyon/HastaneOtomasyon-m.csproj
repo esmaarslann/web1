@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E30696EB-6019-4F97-8CC5-6326EE1A1CE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HastaneOtomasyon</RootNamespace>
+    <AssemblyName>HastaneOtomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnasayfa.Designer.cs">
+      <DependentUpon>frmAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHastaKabul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHastaKabul.Designer.cs">
+      <DependentUpon>frmHastaKabul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHastaKayitKarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHastaKayitKarti.Designer.cs">
+      <DependentUpon>frmHastaKayitKarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHastaKayitSorgulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHastaKayitSorgulama.Designer.cs">
+      <DependentUpon>frmHastaKayitSorgulama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHizmetIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHizmetIslemleri.Designer.cs">
+      <DependentUpon>frmHizmetIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHizmetTanimlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHizmetTanimlama.Designer.cs">
+      <DependentUpon>frmHizmetTanimlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKlinikIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKlinikIslemleri.Designer.cs">
+      <DependentUpon>frmKlinikIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKlinikTanimlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKlinikTanimlama.Designer.cs">
+      <DependentUpon>frmKlinikTanimlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMuayene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMuayene.Designer.cs">
+      <DependentUpon>frmMuayene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMuayeneListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMuayeneListesi.Designer.cs">
+      <DependentUpon>frmMuayeneListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersoneller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersoneller.Designer.cs">
+      <DependentUpon>frmPersoneller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonelSorgulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonelSorgulama.Designer.cs">
+      <DependentUpon>frmPersonelSorgulama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRandevuIptal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRandevuIptal.Designer.cs">
+      <DependentUpon>frmRandevuIptal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRandevular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRandevular.Designer.cs">
+      <DependentUpon>frmRandevular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSGKIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSGKIslemleri.Designer.cs">
+      <DependentUpon>frmSGKIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSGKTanimlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSGKTanimlama.Designer.cs">
+      <DependentUpon>frmSGKTanimlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTahlilTanimlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTahlilTanimlama.Designer.cs">
+      <DependentUpon>frmTahlilTanimlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Genel.cs" />
+    <Compile Include="Models\HastaGecmisi.cs" />
+    <Compile Include="Models\HastaHizmetHareketler.cs" />
+    <Compile Include="Models\HastaKabul.cs" />
+    <Compile Include="Models\Hastalar.cs" />
+    <Compile Include="Models\HastaSikayetleri.cs" />
+    <Compile Include="Models\Hizmetler.cs" />
+    <Compile Include="Models\Klinikler.cs" />
+    <Compile Include="Models\Kurumlar.cs" />
+    <Compile Include="Models\Odemeler.cs" />
+    <Compile Include="Models\Personeller.cs" />
+    <Compile Include="Models\Randevular.cs" />
+    <Compile Include="Models\Receteler.cs" />
+    <Compile Include="Models\Tahliller.cs" />
+    <Compile Include="Models\Teshisler.cs" />
+    <Compile Include="Models\Unvanlar.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unvanlar.cs" />
+    <EmbeddedResource Include="frmAnasayfa.resx">
+      <DependentUpon>frmAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHastaKabul.resx">
+      <DependentUpon>frmHastaKabul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHastaKayitKarti.resx">
+      <DependentUpon>frmHastaKayitKarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHastaKayitSorgulama.resx">
+      <DependentUpon>frmHastaKayitSorgulama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHizmetIslemleri.resx">
+      <DependentUpon>frmHizmetIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHizmetTanimlama.resx">
+      <DependentUpon>frmHizmetTanimlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKlinikIslemleri.resx">
+      <DependentUpon>frmKlinikIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKlinikTanimlama.resx">
+      <DependentUpon>frmKlinikTanimlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMuayene.resx">
+      <DependentUpon>frmMuayene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMuayeneListesi.resx">
+      <DependentUpon>frmMuayeneListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersoneller.resx">
+      <DependentUpon>frmPersoneller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonelSorgulama.resx">
+      <DependentUpon>frmPersonelSorgulama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRandevuIptal.resx">
+      <DependentUpon>frmRandevuIptal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRandevular.resx">
+      <DependentUpon>frmRandevular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSGKIslemleri.resx">
+      <DependentUpon>frmSGKIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSGKTanimlama.resx">
+      <DependentUpon>frmSGKTanimlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTahlilTanimlama.resx">
+      <DependentUpon>frmTahlilTanimlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pictures\appointment-icon.jpg" />
+    <Content Include="Pictures\cikis.jpg" />
+    <Content Include="Pictures\Doktor.png" />
+    <Content Include="Pictures\duzenle.png" />
+    <Content Include="Pictures\hospital-2-32.ico" />
+    <Content Include="Pictures\images %281%29.jpg" />
+    <Content Include="Pictures\images.png" />
+    <Content Include="Pictures\kapat.png" />
+    <Content Include="Pictures\Lab.jpg" />
+    <Content Include="Pictures\Para.png" />
+    <Content Include="Pictures\Randevu.jpg" />
+    <Content Include="Pictures\Randevu.png" />
+    <Content Include="Pictures\raporlama.png" />
+    <Content Include="Pictures\sil.png" />
+    <Content Include="Pictures\steteskop.jpg" />
+    <Content Include="Pictures\user.jpg" />
+    <None Include="Pictures\Hasta.jpg" />
+    <Content Include="Pictures\ekle.jpg" />
+    <Content Include="Pictures\Hasta2.jpg" />
+    <Content Include="Pictures\hastane.ico" />
+    <Content Include="Pictures\hastane.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
